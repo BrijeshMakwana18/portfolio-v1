@@ -1,15 +1,40 @@
 const theme = {
   light: {
-    body: "#FAFDFF",
-    text: "#0E151C",
+    body: "#FFFFFF",
+    primaryFont: "#0E151C",
     blue: "#5DA2EF",
+    pink: "#ED3F77",
+    card: "#EFF1F5",
+    brandsContainer: "#DFEBF6",
+    navbar: "#DFEBF6",
+    heading: "#2F268F",
   },
 
   dark: {
     body: "#0E151C",
-    text: "#FAFDFF",
+    primaryFont: "#FAFDFF",
     blue: "#5DA2EF",
+    pink: "#ED3F77",
+    card: "#1E262F",
+    brandsContainer: "#1E262F",
+    navbar: "#182635",
+    heading: "#FDE24D",
   },
 };
 
-export default theme;
+const fonts = {
+  Poppins: "Poppins",
+  PoppinsMedium: "PoppinsMedium",
+  PoppinsBold: "PoppinsBold",
+};
+
+const fs = {
+  xxl: "2.5rem",
+  xl: "2rem",
+  large: "1.5rem",
+  medium: "1.2rem",
+  small: "1rem",
+  xs: "0.8rem",
+};
+
+export { theme, fonts, fs };
