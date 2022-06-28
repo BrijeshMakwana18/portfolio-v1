@@ -36,10 +36,17 @@ export const WorkItem = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 3vh;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ImageContainer = styled.div`
   width: 50%;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const DetailsContainer = styled.div`
@@ -47,6 +54,10 @@ export const DetailsContainer = styled.div`
   padding-left: 2vw;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin-top: 2vh;
+  }
 `;
 
 export const Title = styled.text`
