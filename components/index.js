@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Experience from "./Experience";
 import Brands from "./Brands";
 import Work from "./Work";
+import Education from "./Education";
 import PlayStore from "./icons/playstore";
 import AppStore from "./icons/appstore";
 const Icon = {
@@ -14,4 +15,4 @@ const Icon = {
   AppStore,
 };
 
-export { Icon, Header, Hero, Experience, Brands, Work };
+export { Icon, Header, Hero, Experience, Brands, Work, Education };
