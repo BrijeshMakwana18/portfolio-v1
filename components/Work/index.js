@@ -83,6 +83,7 @@ export default function Work({ toggleTheme, theme, workRef }) {
                 height={1200}
                 width={1920}
                 layout="responsive"
+                alt="ProjectImage"
                 style={{
                   borderRadius: 10,
                 }}
