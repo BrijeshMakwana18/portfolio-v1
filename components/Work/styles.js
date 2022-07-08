@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { fonts, fs } from "../../utils/";
 export const Container = styled.div`
   max-width: 100vw;
-  padding: 20vh 0 15vh 0;
+  padding: 16vh 0 15vh 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -84,14 +84,17 @@ export const Info = styled.text`
 `;
 
 export const TechContainer = styled.div`
-  display: flex;
+  display: grid;
   flex-direction: row;
   align-items: center;
-  margin-top: 2vh;
   column-gap: 2vw;
   width: fit-content;
   /* background-color: green; */
   justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
   svg {
     height: 30px;
     width: 5vh;
@@ -101,10 +104,11 @@ export const TechContainer = styled.div`
 export const TechItem = styled.text`
   font-size: 1rem;
   cursor: pointer;
-  text-align: center;
+  /* text-align: center; */
   font-family: ${fonts.Poppins};
   color: ${(props) => props.theme.pink};
   /* opacity: 0.5; */
+  margin-top: 2vh;
 `;
 
 export const LinksContainer = styled.div`

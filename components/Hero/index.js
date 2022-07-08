@@ -1,6 +1,15 @@
 import { useEffect } from "react";
 import Image from "next/image";
-import { Container, Heading, BigHeading, Desc, Resume } from "./styles";
+import { Icon } from "..";
+import {
+  Container,
+  Heading,
+  BigHeading,
+  Desc,
+  ResumeContainer,
+  Resume,
+  GithubContainer,
+} from "./styles";
 export default function Hero({ heroRef }) {
   return (
     <Container ref={heroRef}>
@@ -15,7 +24,17 @@ export default function Hero({ heroRef }) {
         }
         <span>Alshaya Group</span>.
       </Desc>
-      <Resume>Resume</Resume>
+      <ResumeContainer>
+        <Resume href={"/Brijesh_Makwana_Resume.pdf"} download>
+          Resume
+        </Resume>
+        <GithubContainer
+          href="http://github.com/BrijeshMakwana18"
+          target={"_blank"}
+        >
+          <Icon.Github />
+        </GithubContainer>
+      </ResumeContainer>
     </Container>
   );
 }

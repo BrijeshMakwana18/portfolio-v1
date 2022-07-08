@@ -7,7 +7,7 @@ import {
   NavItemContainer,
   NavItem,
 } from "./styles";
-let menus = ["Experience", "Work", "Education", "Contact"];
+let menus = ["Experience", "Education", "Work", "Contact"];
 export default function Header({ toggleTheme, theme, headerRef, allRefs }) {
   const onItemPress = (item) => {
     let id = allRefs[item.toLowerCase()];
@@ -25,7 +25,7 @@ export default function Header({ toggleTheme, theme, headerRef, allRefs }) {
           );
         })}
       </NavItemContainer>
-      <Icon.HamBurger />
+      {/* <Icon.HamBurger /> */}
     </Container>
   );
 }

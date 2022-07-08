@@ -2,7 +2,15 @@ import React, { useState, useRef, useEffect } from "react";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles, theme, sr, srConfig } from "../utils";
-import { Header, Hero, Brands, Experience, Work } from "../components";
+import {
+  Header,
+  Hero,
+  Brands,
+  Experience,
+  Work,
+  Education,
+  Contact,
+} from "../components";
 export default function Home() {
   const [currentTheme, setCurrentTheme] = useState("dark");
   const { light, dark } = theme;
@@ -12,10 +20,14 @@ export default function Home() {
   const heroRef = useRef(null);
   const brandsRef = useRef(null);
   const workRef = useRef(null);
+  const educationRef = useRef(null);
+  const contactRef = useRef(null);
 
   const allRefs = {
     experience: experienceRef,
     work: workRef,
+    education: workRef,
+    contact: contactRef,
   };
   const toggleTheme = () => {
     theme == "light" ? setCurrentTheme("dark") : setCurrentTheme("light");
@@ -29,6 +41,8 @@ export default function Home() {
     sr?.reveal(brandsRef.current, srConfig(300));
     sr?.reveal(experienceRef.current, srConfig(200));
     sr?.reveal(workRef.current, srConfig(300));
+    sr?.reveal(educationRef.current, srConfig(300));
+    sr?.reveal(contactRef.current, srConfig(300));
   }, []);
 
   return (
@@ -41,7 +55,9 @@ export default function Home() {
       <Hero heroRef={heroRef} />
       <Brands brandsRef={brandsRef} />
       <Experience experienceRef={experienceRef} />
+      <Education educationRef={educationRef} />
       <Work workRef={workRef} />
+      <Contact contactRef={contactRef} />
     </ThemeProvider>
   );
 }

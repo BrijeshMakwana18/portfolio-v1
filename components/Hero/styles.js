@@ -20,6 +20,9 @@ export const BigHeading = styled.text`
   color: ${(props) => props.theme.primaryFont};
   opacity: ${(props) => (props.opacity ? props.opacity : 1)};
   margin-top: 1vh;
+  @media (max-width: 768px) {
+    font-size: ${fs.large};
+  }
 `;
 
 export const Desc = styled.p`
@@ -39,7 +42,14 @@ export const Desc = styled.p`
   }
 `;
 
-export const Resume = styled.div`
+export const ResumeContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4vh;
+`;
+
+export const Resume = styled.a`
   cursor: pointer;
   height: 60px;
   width: 200px;
@@ -52,9 +62,24 @@ export const Resume = styled.div`
   color: ${(props) => props.theme.primaryFont};
   font-size: ${fs.medium};
   font-family: ${fonts.PoppinsMedium};
-  margin-top: 5%;
+  text-decoration: none;
   transition: 1s;
+  @media (max-width: 768px) {
+    height: 40px;
+    width: 160px;
+    font-size: ${fs.small};
+  }
   &:hover {
     background-color: ${(props) => props.theme.blue};
+  }
+`;
+
+export const GithubContainer = styled.a`
+  height: 50px;
+  width: 50px;
+  margin-left: 4vw;
+  cursor: pointer;
+  svg {
+    fill: ${(props) => props.theme.blue};
   }
 `;

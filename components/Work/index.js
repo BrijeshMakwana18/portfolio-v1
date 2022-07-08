@@ -39,11 +39,11 @@ const data = [
     links: [
       {
         platform: "android",
-        link: "https://play.google.com/store/apps/details?id=com.vs.mena",
+        link: "https://play.google.com/store/apps/details?id=com.hm.mena&hl=en_IN&gl=US",
       },
       {
         platform: "ios",
-        link: "https://apps.apple.com/us/app/victorias-secret-middle-east/id1559906965",
+        link: "https://apps.apple.com/qa/app/h-m-we-love-fashion-mena/id1445040108",
       },
     ],
   },
@@ -80,9 +80,12 @@ export default function Work({ toggleTheme, theme, workRef }) {
             <ImageContainer>
               <Image
                 src={item.image}
-                height={1080}
+                height={1200}
                 width={1920}
                 layout="responsive"
+                style={{
+                  borderRadius: 10,
+                }}
               />
             </ImageContainer>
             <DetailsContainer>
