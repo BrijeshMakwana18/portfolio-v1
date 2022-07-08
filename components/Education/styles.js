@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { fonts, fs } from "../../utils/";
 export const Container = styled.div`
   max-width: 100vw;
-  padding: 20vh 0 15vh 0;
+  padding: 5vh 0 5vh 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

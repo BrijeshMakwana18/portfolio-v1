@@ -16,19 +16,19 @@ const data = [
     title: "B.E. in Information Technology",
     board: "Gujarat Technological University",
     duration: "05/2017 - 06/2021",
-    cgpa: "9.10",
+    cgpa: "CGPA   9.10",
   },
   {
     title: "Higher Secondary",
     board: "GHSEB",
     duration: "04/2015 - 04/2017",
-    cgpa: "6.4",
+    cgpa: "CGPA   6.4",
   },
 ];
 
-export default function Education({ toggleTheme, theme, eduRef }) {
+export default function Education({ toggleTheme, theme, educationRef }) {
   return (
-    <Container ref={eduRef}>
+    <Container ref={educationRef}>
       <Header>Education</Header>
       <EduItemContainer>
         {data.map((item, index) => {
