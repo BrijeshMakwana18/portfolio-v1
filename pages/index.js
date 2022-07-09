@@ -26,7 +26,7 @@ export default function Home() {
   const allRefs = {
     experience: experienceRef,
     work: workRef,
-    education: workRef,
+    education: experienceRef,
     contact: contactRef,
   };
   const toggleTheme = () => {
