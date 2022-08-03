@@ -13,6 +13,7 @@ import {
 } from "../components";
 export default function Home() {
   const [currentTheme, setCurrentTheme] = useState("dark");
+  const [hidden, setHidden] = useState(true);
   const { light, dark } = theme;
 
   const headerRef = useRef(null);
@@ -36,18 +37,19 @@ export default function Home() {
   useEffect(() => {
     // let exp = document.getElementById(experienceRef);
     // console.log(exp);
-    sr?.reveal(headerRef.current, srConfig(100));
-    sr?.reveal(heroRef.current, srConfig(200));
-    sr?.reveal(brandsRef.current, srConfig(300));
-    sr?.reveal(experienceRef.current, srConfig(200));
-    sr?.reveal(workRef.current, srConfig(300));
-    sr?.reveal(educationRef.current, srConfig(300));
-    sr?.reveal(contactRef.current, srConfig(300));
+    setHidden(false);
+    sr?.reveal(headerRef.current, srConfig(1000));
+    sr?.reveal(heroRef.current, srConfig(2000));
+    sr?.reveal(brandsRef.current, srConfig(3000));
+    sr?.reveal(experienceRef.current, srConfig(400));
+    sr?.reveal(workRef.current, srConfig(400));
+    sr?.reveal(educationRef.current, srConfig(400));
+    sr?.reveal(contactRef.current, srConfig(400));
   }, []);
 
   return (
     <ThemeProvider theme={currentTheme === "light" ? light : dark}>
-      <GlobalStyles />
+      <GlobalStyles hidden={hidden} />
       <Head>
         <title>Brijesh Makwanna</title>
       </Head>

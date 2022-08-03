@@ -21,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     font-family: "PoppinsBold", sans-serif;
     margin: 0px;
+    display: ${(props) => (props.hidden ? "none" : "block")};
     padding: 0 12vw 10vh 12vw;
     .navbar{
     margin-left: -12vw;

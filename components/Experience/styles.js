@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { fonts, fs } from "../../utils/";
 export const Container = styled.div`
   max-width: 100vw;
-  padding: 20vh 0 4vh 0;
+  margin-top: 4vh;
+  padding: 16vh 0 4vh 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
