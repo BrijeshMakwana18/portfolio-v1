@@ -14,6 +14,7 @@ import LinkedIn from "./icons/linkedin";
 import Github from "./icons/github";
 import Education from "./Education";
 import Contact from "./Contact";
+import HeroSkills from "./HeroSkills";
 const Icon = {
   Moon,
   HamBurger,
@@ -26,4 +27,14 @@ const Icon = {
   Github,
 };
 
-export { Icon, Header, Hero, Experience, Brands, Work, Education, Contact };
+export {
+  Icon,
+  Header,
+  Hero,
+  Experience,
+  Brands,
+  Work,
+  Education,
+  Contact,
+  HeroSkills,
+};

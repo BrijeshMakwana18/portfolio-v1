@@ -10,6 +10,7 @@ import {
   Work,
   Education,
   Contact,
+  HeroSkills,
 } from "../components";
 export default function Home() {
   const [currentTheme, setCurrentTheme] = useState("dark");
@@ -19,6 +20,7 @@ export default function Home() {
   const headerRef = useRef(null);
   const experienceRef = useRef(null);
   const heroRef = useRef(null);
+  const heroSkillsRef = useRef(null);
   const brandsRef = useRef(null);
   const workRef = useRef(null);
   const educationRef = useRef(null);
@@ -40,6 +42,7 @@ export default function Home() {
     setHidden(false);
     sr?.reveal(headerRef.current, srConfig(1000));
     sr?.reveal(heroRef.current, srConfig(2000));
+    sr?.reveal(heroSkillsRef.current, srConfig(2500));
     sr?.reveal(brandsRef.current, srConfig(3000));
     sr?.reveal(experienceRef.current, srConfig(400));
     sr?.reveal(workRef.current, srConfig(400));
@@ -54,6 +57,7 @@ export default function Home() {
         <title>Brijesh Makwanna</title>
       </Head>
       <Header headerRef={headerRef} allRefs={allRefs} />
+      <HeroSkills heroSkillsRef={heroSkillsRef} />
       <Hero heroRef={heroRef} />
       <Brands brandsRef={brandsRef} />
       <Experience experienceRef={experienceRef} />
