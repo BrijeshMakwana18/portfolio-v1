@@ -57,7 +57,6 @@ export default function Home() {
         <title>Brijesh Makwanna</title>
       </Head>
       <Header headerRef={headerRef} allRefs={allRefs} />
-      <HeroSkills heroSkillsRef={heroSkillsRef} />
       <Hero heroRef={heroRef} />
       <Brands brandsRef={brandsRef} />
       <Experience experienceRef={experienceRef} />
