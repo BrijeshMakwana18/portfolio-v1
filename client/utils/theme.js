@@ -11,11 +11,11 @@ const theme = {
   },
 
   dark: {
-    body: "#0E151C",
+    body: "#0F0F0F",
     primaryFont: "#FAFDFF",
-    blue: "#5DA2EF",
+    blue: "#3FACF8",
     pink: "#ED3F77",
-    card: "#1E262F",
+    card: "#1A1A1A",
     brandsContainer: "rgba(250,253,255,0.4)",
     navbar: "#182635",
     heading: "#FDE24D",
