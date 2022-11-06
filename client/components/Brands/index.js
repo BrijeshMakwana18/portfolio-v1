@@ -11,7 +11,7 @@ export default function Brands({ brandsRef }) {
   return (
     <Container className="brands-container" ref={brandsRef}>
       <BrandsTitle className="aaaa">
-        {" Brands that I've worked with at "}
+        {" Brands that I am working with at "}
         <a
           href="https://www.alshaya.com/en/"
           target={"_blank"}
