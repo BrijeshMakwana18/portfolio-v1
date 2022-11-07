@@ -34,7 +34,17 @@ export const Container = styled.div`
 export const LogoContainer = styled.text`
   font-size: ${fs.large};
   font-family: ${fonts.PoppinsMedium};
-  color: ${(props) => props.theme.blue};
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    315deg,
+    rgb(0, 153, 255) 0%,
+    rgb(0, 204, 255) 100%
+  );
+  background-clip: text;
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
 `;
 
