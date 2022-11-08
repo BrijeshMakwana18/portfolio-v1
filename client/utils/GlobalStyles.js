@@ -16,6 +16,9 @@ const GlobalStyles = createGlobalStyle`
     margin: 0px;
     padding:0px;
   }
+  body::-webkit-scrollbar{
+    display:none
+  }
   body{
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
