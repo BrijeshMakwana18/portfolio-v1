@@ -54,23 +54,32 @@ export const Resume = styled.a`
   height: 60px;
   width: 200px;
   border-radius: 0.3vw;
-  border: 1px solid ${(props) => props.theme.blue};
+  /* border: 1px solid ${(props) => props.theme.blue}; */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background: linear-gradient(
+    315deg,
+    var(--token-66dfdba2-b084-43a3-a18d-237c2893b6a7, rgb(153, 0, 255)) 0%,
+    hsl(206, 100%, 53%) 100%
+  );
+  opacity: 1;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: rgba(18, 240, 252, 0.3) 0px 0px 0px 0px;
+
   color: ${(props) => props.theme.primaryFont};
-  font-size: ${fs.medium};
+  font-size: ${fs.large};
   font-family: ${fonts.PoppinsMedium};
   text-decoration: none;
-  transition: 1s;
+  /* transition: 1s; */
   @media (max-width: 768px) {
     height: 40px;
     width: 160px;
     font-size: ${fs.small};
-  }
-  &:hover {
-    background-color: ${(props) => props.theme.blue};
   }
 `;
 
