@@ -10,6 +10,7 @@ export const SkillsContainer = styled.div`
   top: 16%;
   right: 4%;
   transform: rotate(0deg);
+  /* background-color: green; */
   transition: transform 0.7s linear;
   animation: rotate 7s infinite linear;
   /* Large devices (laptops/desktops, 992px and up) */
@@ -37,6 +38,35 @@ export const SkillsContainer = styled.div`
   }
 
   @-webkit-keyframes rotate {
+  }
+  .skills-charts {
+    width: 100%;
+    background-color: green;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  #myCanvasContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #myCanvas {
+    margin: auto;
+    width: 100%;
   }
 `;
 
