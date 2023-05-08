@@ -38,3 +38,5 @@ export {
   Contact,
   HeroSkills,
 };
+
+export * from "./Recommendations";
