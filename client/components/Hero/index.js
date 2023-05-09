@@ -20,9 +20,9 @@ export default function Hero({ heroRef }) {
       </BigHeading>
       <Desc>
         {
-          "I’m a software engineer specializing in building mobile apps and learning new tech every day. Currently, I’m focused on building e-commerce products at "
+          "I’m a software engineer specializing in building mobile and web apps and learning new tech every day. Currently, I’m focused on building an ERP product."
         }
-        <span>Alshaya Group</span>.
+        {/* <span>Alshaya Group</span>. */}
       </Desc>
       <ResumeContainer>
         <Resume href={"/Brijesh_Makwana_Resume.pdf"} download>

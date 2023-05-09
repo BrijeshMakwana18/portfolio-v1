@@ -11,6 +11,7 @@ import {
   Education,
   Contact,
   HeroSkills,
+  Recommendations,
 } from "../components";
 export default function Home() {
   const [currentTheme, setCurrentTheme] = useState("dark");
@@ -63,6 +64,7 @@ export default function Home() {
       <Education educationRef={educationRef} />
       <Work workRef={workRef} />
       <Contact contactRef={contactRef} />
+      <Recommendations />
     </ThemeProvider>
   );
 }
