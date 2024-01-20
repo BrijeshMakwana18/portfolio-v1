@@ -15,11 +15,24 @@ import {
 } from "./styles";
 const data = [
   {
+    company: "Freelance",
+    // info: "Alshaya Group is a dynamic family-owned enterprise, first established in Kuwait in 1890. With a consistent record of growth and innovation, Alshaya Group is one of the world’s leading brand franchise operators, offering an unparalleled choice of well-loved international brands to customers.",
+    website: "",
+    startDate: "Dec 2022",
+    endDate: "Present",
+    designation: "Fullstack Developer",
+    desc: [
+      "Write modern, performant, maintainable code for a diverse array of international brands like H&M, Victoria's Secret, Bath and Body Works",
+      "Work with a variety of different languages, platforms, frameworks such as JavaScript, TypeScript, React Native",
+      "Communicate with multi-disciplinary teams of engineers, designers and stakeholders on a daily basis",
+    ],
+  },
+  {
     company: "Alshaya Group",
     info: "Alshaya Group is a dynamic family-owned enterprise, first established in Kuwait in 1890. With a consistent record of growth and innovation, Alshaya Group is one of the world’s leading brand franchise operators, offering an unparalleled choice of well-loved international brands to customers.",
     website: "https://www.alshaya.com",
     startDate: "Dec 2021",
-    endDate: "Present",
+    endDate: "Dec 2022",
     designation: "Software Engineer",
     desc: [
       "Write modern, performant, maintainable code for a diverse array of international brands like H&M, Victoria's Secret, Bath and Body Works",
@@ -37,6 +50,7 @@ const skills = [
   "NodeJS",
   "Express",
   "MongoDB",
+  "Code Review",
 ];
 export default function Experience({ toggleTheme, theme, experienceRef }) {
   const [expId, setExpId] = useState("");
@@ -55,7 +69,9 @@ export default function Experience({ toggleTheme, theme, experienceRef }) {
           return (
             <ExpItem key={index} index={index}>
               <Company
-                onClick={() => window.open(item.website, "_blank")}
+                onClick={() => {
+                  item.website && window.open(item.website, "_blank");
+                }}
                 onMouseEnter={() => onMouseEnter(index)}
                 onMouseLeave={() => onMouseLeave()}
                 hover={expId === index}
