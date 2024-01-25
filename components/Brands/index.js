@@ -29,7 +29,12 @@ export default function Brands({ brandsRef }) {
         {brands.map((item, index) => {
           return (
             <BrandsImageContainer key={index}>
-              <Image objectFit="contain" src={item} alt="brand" />
+              <Image
+                className="brand-image"
+                objectFit="contain"
+                src={item}
+                alt="brand"
+              />
             </BrandsImageContainer>
           );
         })}

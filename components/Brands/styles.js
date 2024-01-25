@@ -32,12 +32,24 @@ export const BrandsContainer = styled.div`
   justify-content: space-around;
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+    /* .brand-image {
+      height: 600;
+      width: 600;
+      background: green;
+    } */
   }
 `;
 
 export const BrandsImageContainer = styled.div`
   display: flex;
   max-height: 200px;
-  width: 23vw;
+  min-height: 200px;
+  /* background: blue; */
+  /* width: 23vw; */
+  .brand-image {
+    height: 400;
+    width: 400;
+    /* background: green; */
+  }
   /* background: green; */
 `;
