@@ -10,7 +10,7 @@ const brands = [vs, hm, db, boots];
 export default function Brands({ brandsRef }) {
   return (
     <Container className="brands-container" ref={brandsRef}>
-      {/* <BrandsTitle className="aaaa">
+      <BrandsTitle className="aaaa">
         {" Brands that I've worked with at "}
         <a
           href="https://www.alshaya.com/en/"
@@ -24,8 +24,8 @@ export default function Brands({ brandsRef }) {
         {brands.map((item, index) => {
           return (
             <Image
-              height={"400px"}
-              width={"1000px"}
+              height={"200px"}
+              width={"200px"}
               objectFit="contain"
               key={index}
               src={item}
@@ -33,7 +33,7 @@ export default function Brands({ brandsRef }) {
             />
           );
         })}
-      </BrandsContainer> */}
+      </BrandsContainer>
     </Container>
   );
 }
