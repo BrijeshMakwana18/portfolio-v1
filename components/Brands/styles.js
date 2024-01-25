@@ -34,3 +34,10 @@ export const BrandsContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 `;
+
+export const BrandsImageContainer = styled.div`
+  display: flex;
+  max-height: 200px;
+  width: 23vw;
+  /* background: green; */
+`;

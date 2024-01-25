@@ -1,5 +1,10 @@
 import Image from "next/image";
-import { Container, BrandsTitle, BrandsContainer } from "./styles";
+import {
+  Container,
+  BrandsTitle,
+  BrandsContainer,
+  BrandsImageContainer,
+} from "./styles";
 
 const vs = require("../../public/vs.png");
 const hm = require("../../public/hm.png");
@@ -23,14 +28,9 @@ export default function Brands({ brandsRef }) {
       <BrandsContainer>
         {brands.map((item, index) => {
           return (
-            <Image
-              height={"200px"}
-              width={"200px"}
-              objectFit="contain"
-              key={index}
-              src={item}
-              alt="brand"
-            />
+            <BrandsImageContainer key={index}>
+              <Image objectFit="contain" src={item} alt="brand" />
+            </BrandsImageContainer>
           );
         })}
       </BrandsContainer>
