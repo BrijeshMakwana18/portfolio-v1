@@ -29,7 +29,7 @@ export default function Home() {
   const allRefs = {
     experience: experienceRef,
     work: workRef,
-    education: experienceRef,
+    education: educationRef,
     contact: contactRef,
   };
   const toggleTheme = () => {
