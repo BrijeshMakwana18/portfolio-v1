@@ -25,6 +25,7 @@ export const BrandsTitle = styled.text`
 export const BrandsContainer = styled.div`
   background-color: ${(props) => props.theme.brandsContainer};
   margin-top: 2vh;
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   flex-direction: row;
@@ -45,10 +46,12 @@ export const BrandsImageContainer = styled.div`
   max-height: 200px;
   min-height: 200px;
   /* background: blue; */
+  overflow: hidden !important;
   /* width: 23vw; */
   .brand-image {
-    height: 400;
-    width: 400;
+    height: 200px;
+    width: 95%;
+    object-fit: contain;
     /* background: green; */
   }
   /* background: green; */

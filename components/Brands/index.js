@@ -30,6 +30,9 @@ export default function Brands({ brandsRef }) {
           return (
             <BrandsImageContainer key={index}>
               <Image
+                width="0"
+                height="0"
+                sizes="100vw"
                 className="brand-image"
                 objectFit="contain"
                 src={item}
