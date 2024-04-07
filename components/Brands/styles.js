@@ -45,12 +45,13 @@ export const BrandsImageContainer = styled.div`
   display: flex;
   max-height: 200px;
   min-height: 200px;
+  padding: 0 10px;
   /* background: blue; */
   overflow: hidden !important;
   /* width: 23vw; */
   .brand-image {
     height: 200px;
-    width: 95%;
+    width: 100%;
     object-fit: contain;
     /* background: green; */
   }
